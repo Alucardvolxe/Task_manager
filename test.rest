@@ -1,0 +1,37 @@
+###
+POST http://127.0.0.1:8000/account/Signup/
+Content-Type: application/json
+
+{
+    "username":"newuser",
+    "email":"new@gmail.com",
+    "password":"1234P"
+}
+
+
+
+
+###
+POST  http://127.0.0.1:8000/account/Login/
+Content-Type: application/json
+
+{"username":"Dan",
+  "password":"1234"}
+
+
+###
+POST http://127.0.0.1:8000/tasks/ 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MTE2MTIyLCJpYXQiOjE3NjUxMTU4MjIsImp0aSI6IjM5NGMxM2JjODY4NzQ0MWM4NDU0ZDNmZDQxOGQ3YzYwIiwidXNlcl9pZCI6IjBlNjRhOGNjLTNkMWEtNDMwYy05Nzg4LWI2NmQ4OGFjOGUxMyJ9.9QYE8cen53Ez_sUshQwUPOz4DtPDUvcG1tHrzcKmYkM
+
+{
+    "title":"rask",
+    "reminder_time":"2025-12-09T12:43:00Z",
+    "number_repeat":"YR"
+}
+
+
+###
+GET http://127.0.0.1:8000/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MTE2MTk2LCJpYXQiOjE3NjUxMTU4OTYsImp0aSI6ImU2YTM2ZDA0Y2ExNzQxMjliMjgyMjkwYzkyZjMxMWFlIiwidXNlcl9pZCI6ImRhZTRjMTk5LTU2N2QtNGM0OS1iNmI3LTk2NDQ5YjZiNGY2NyJ9.8SxFe36kmUHIIr85EsG-Y6lQh--8Kt2iDVZUNkU_6t4

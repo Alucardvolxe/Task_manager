@@ -1,0 +1,10 @@
+Your next assignment
+
+Create a program that allows a user to set a reminder message, 
+choose the time they want to be notified, 
+and specify how often the reminder should repeat.
+When the scheduled time arrives, 
+the program should automatically deliver the reminder 
+according to the chosen frequency
+
+This is going to help you understand scheduling
