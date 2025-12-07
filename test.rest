@@ -15,15 +15,14 @@ Content-Type: application/json
 POST  http://127.0.0.1:8000/account/Login/
 Content-Type: application/json
 
-{"username":"Dan",
-  "password":"1234"}
+{"username":"dan",
+  "password":"1234P"}
 
 
 ###
 POST http://127.0.0.1:8000/tasks/ 
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MTE2MTIyLCJpYXQiOjE3NjUxMTU4MjIsImp0aSI6IjM5NGMxM2JjODY4NzQ0MWM4NDU0ZDNmZDQxOGQ3YzYwIiwidXNlcl9pZCI6IjBlNjRhOGNjLTNkMWEtNDMwYy05Nzg4LWI2NmQ4OGFjOGUxMyJ9.9QYE8cen53Ez_sUshQwUPOz4DtPDUvcG1tHrzcKmYkM
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MTM4MjAwLCJpYXQiOjE3NjUxMzc5MDAsImp0aSI6IjY4NmU3MWEyNTQyZDQ1ZWI5OGRiZTQ2YzQ1YWI2MmEyIiwidXNlcl9pZCI6IjBlNjRhOGNjLTNkMWEtNDMwYy05Nzg4LWI2NmQ4OGFjOGUxMyJ9.kO7EPIjLo8siLEWnNDfcBPQBsVemrBOYpEDw2pjQBCo
 {
     "title":"rask",
     "reminder_time":"2025-12-09T12:43:00Z",
@@ -34,4 +33,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 ###
 GET http://127.0.0.1:8000/tasks/user-tasks/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MTE2Nzk5LCJpYXQiOjE3NjUxMTY0OTksImp0aSI6Ijc5NDAzODRkNGQ4ZjQ2MDc5NjQwZThhZGQyNTc3ZmEwIiwidXNlcl9pZCI6ImRhZTRjMTk5LTU2N2QtNGM0OS1iNmI3LTk2NDQ5YjZiNGY2NyJ9.UWauJaqWBo83502UhqGz_PZR99oxHBcKO0aIMpw2ScQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MTM4MjAwLCJpYXQiOjE3NjUxMzc5MDAsImp0aSI6IjY4NmU3MWEyNTQyZDQ1ZWI5OGRiZTQ2YzQ1YWI2MmEyIiwidXNlcl9pZCI6IjBlNjRhOGNjLTNkMWEtNDMwYy05Nzg4LWI2NmQ4OGFjOGUxMyJ9.kO7EPIjLo8siLEWnNDfcBPQBsVemrBOYpEDw2pjQBCo

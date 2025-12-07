@@ -13,6 +13,7 @@ class Tasks(models.Model):
         YEARLY = 'YR','Yearly'
 
     title = models.CharField(max_length=250)
+    detail = models.CharField(max_length= 200,default="")
     date_added = models.DateTimeField(default =timezone.now)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     reminder_time = models.DateTimeField()

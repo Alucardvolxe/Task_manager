@@ -10,18 +10,17 @@ from .models import User
 class TaskViews(viewsets.ModelViewSet):
     queryset = Tasks.objects.all()
     serializer_class = TaskSerialzer
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
     filterset_class = Taskfilter
     filter_backends = [DjangoFilterBackend]
-    def get_queryset(self):
-        return Tasks.objects.filter(user=self.request.user)
+    
 
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
 
     @action(
-            permission_classes =[IsAuthenticated],
+            # permission_classes =[IsAuthenticated],
             detail=False,
               methods=['get'],
                 url_path='user-tasks')

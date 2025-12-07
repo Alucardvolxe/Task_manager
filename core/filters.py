@@ -8,6 +8,7 @@ class Taskfilter(django_filters.FilterSet):
         fields = {
             'title':['exact'],
             'number_repeat':['exact'],
+            'detail':['iexact'],
             'date_added':['exact','lt','gt'],
             'reminder_time':['exact','lt','gt']
         }
