@@ -10,7 +10,7 @@ from .models import User
 class TaskViews(viewsets.ModelViewSet):
     queryset = Tasks.objects.all()
     serializer_class = TaskSerialzer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
     filterset_class = Taskfilter
     filter_backends = [DjangoFilterBackend]
     def get_queryset(self):
@@ -20,7 +20,11 @@ class TaskViews(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
 
-    @action(detail=False, methods=['get'], url_path='user-tasks')
+    @action(
+            permission_classes =[IsAuthenticated],
+            detail=False,
+              methods=['get'],
+                url_path='user-tasks')
     def Usertasks(self, request, *args,**kwargs):
         tasks=self.get_queryset().filter(user = request.user)
         serializer = self.get_serializer(tasks, many = True)
