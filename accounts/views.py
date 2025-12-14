@@ -10,6 +10,8 @@ from rest_framework_simplejwt.tokens import RefreshToken,AccessToken
 class Signup(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = SignupSerializer
+    
+           
 
 
 class Login(generics.GenericAPIView):

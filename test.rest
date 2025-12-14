@@ -1,36 +1,74 @@
-###
+### Signup
 POST http://127.0.0.1:8000/account/Signup/
 Content-Type: application/json
 
 {
-    "username":"newuser",
-    "email":"new@gmail.com",
+    "username":"test3",
+    "email":"test3@gmail.com",
     "password":"1234P"
 }
 
 
 
-
-###
+### Login
 POST  http://127.0.0.1:8000/account/Login/
 Content-Type: application/json
 
-{"username":"dan",
+{"username":"test3",
   "password":"1234P"}
 
+### Refresh token
+POST  http://127.0.0.1:8000/api/token/refresh/
+Content-Type: application/json
 
-###
+{
+   "refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2NTc5NjE5NSwiaWF0IjoxNzY1NzA5Nzk1LCJqdGkiOiI4MzkwYTUwNDRhMmQ0MmU5YjMyMWQ1MDViMTIyMjA4MyIsInVzZXJfaWQiOiIxZGY1NGZhYy04YTY2LTRlYmEtYjBjMi0xM2U0ZmNlYmZlNDUifQ.zk0kMGSqrJElopaxC22OvvKEETqK9vdRW45hyY0QvCE"
+
+}
+### Adding task
 POST http://127.0.0.1:8000/tasks/ 
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MTM4MjAwLCJpYXQiOjE3NjUxMzc5MDAsImp0aSI6IjY4NmU3MWEyNTQyZDQ1ZWI5OGRiZTQ2YzQ1YWI2MmEyIiwidXNlcl9pZCI6IjBlNjRhOGNjLTNkMWEtNDMwYy05Nzg4LWI2NmQ4OGFjOGUxMyJ9.kO7EPIjLo8siLEWnNDfcBPQBsVemrBOYpEDw2pjQBCo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1NzIyMDM0LCJpYXQiOjE3NjU3MjE3MzQsImp0aSI6Ijc4YWJjZjkxMzVlODRkNzFhNjc3NGNjNTJjNDQwOGJlIiwidXNlcl9pZCI6ImJiYjU1NTVkLThiNzgtNGE4My1hZGE5LThjM2FjNjc1NTZiYSJ9.lbe56GHn5vdlJ-YiEXKd6iqOVgzxQDuW0WJeJ9sSIko
+
 {
-    "title":"rask",
-    "reminder_time":"2025-12-09T12:43:00Z",
-    "number_repeat":"YR"
+  "message": "hello world",
+  "reminder_time": "2025-12-11T22:14:00Z",
+  "interval_min": 1,
+  "number_repeat": 2
 }
 
-
 ###
+GET http://127.0.0.1:8000/tasks/
+Content-Type:  application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1NzIyMDM0LCJpYXQiOjE3NjU3MjE3MzQsImp0aSI6Ijc4YWJjZjkxMzVlODRkNzFhNjc3NGNjNTJjNDQwOGJlIiwidXNlcl9pZCI6ImJiYjU1NTVkLThiNzgtNGE4My1hZGE5LThjM2FjNjc1NTZiYSJ9.lbe56GHn5vdlJ-YiEXKd6iqOVgzxQDuW0WJeJ9sSIko
+### Viewing task
+GET http://127.0.0.1:8000/tasks/6/
+Content-Type:application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1NjU3NjkyLCJpYXQiOjE3NjU2NTczOTIsImp0aSI6IjExZTA0MmZmMjhlNTQyNjNhZGQ2ODFiMTY4N2UyMDM0IiwidXNlcl9pZCI6ImVmN2ZhM2YwLTJkMTktNDk4MS1iZGUyLTZjN2RmYzhhMDAzNiJ9.F4pl0qixkOSn3EybNfRpRpdeeoGEp4USqRo9xaFExhw
+
+
+### Editing tasks
+PATCH http://127.0.0.1:8000/tasks/1/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1NDg4MzA0LCJpYXQiOjE3NjU0ODgwMDQsImp0aSI6IjA0NmM4Y2QxNTkzZjQzZDU5NzRiMGI2NjZlNDQ4ZjJjIiwidXNlcl9pZCI6ImVmN2ZhM2YwLTJkMTktNDk4MS1iZGUyLTZjN2RmYzhhMDAzNiJ9.Hye92Y_acdGlVzWclACyazC7ngKiusKsjbhZcjWt9tw
+
+{"message":"test"}
+
+
+### Deleting task
+DELETE http://127.0.0.1:8000/tasks/2/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1NjU2OTU3LCJpYXQiOjE3NjU2NTY2NTcsImp0aSI6IjNjMjk0ZjBmODQ4ZDQ0YWFhNGE5ZWRlMmEwMDYxMTljIiwidXNlcl9pZCI6ImVmN2ZhM2YwLTJkMTktNDk4MS1iZGUyLTZjN2RmYzhhMDAzNiJ9.ILqIP5CA65JKSc8t3TBo5O-A4Cj9aB0guzvJvcfAPMo
+
+### Listing tasks
 GET http://127.0.0.1:8000/tasks/user-tasks/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1MTM4MjAwLCJpYXQiOjE3NjUxMzc5MDAsImp0aSI6IjY4NmU3MWEyNTQyZDQ1ZWI5OGRiZTQ2YzQ1YWI2MmEyIiwidXNlcl9pZCI6IjBlNjRhOGNjLTNkMWEtNDMwYy05Nzg4LWI2NmQ4OGFjOGUxMyJ9.kO7EPIjLo8siLEWnNDfcBPQBsVemrBOYpEDw2pjQBCo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1NjU2OTU3LCJpYXQiOjE3NjU2NTY2NTcsImp0aSI6IjNjMjk0ZjBmODQ4ZDQ0YWFhNGE5ZWRlMmEwMDYxMTljIiwidXNlcl9pZCI6ImVmN2ZhM2YwLTJkMTktNDk4MS1iZGUyLTZjN2RmYzhhMDAzNiJ9.ILqIP5CA65JKSc8t3TBo5O-A4Cj9aB0guzvJvcfAPMo
+
+
+
+### Listing timline for tasks
+
+GET http://127.0.0.1:8000/tasks/8/results/
+Content-Type:  application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1NzIyMDM0LCJpYXQiOjE3NjU3MjE3MzQsImp0aSI6Ijc4YWJjZjkxMzVlODRkNzFhNjc3NGNjNTJjNDQwOGJlIiwidXNlcl9pZCI6ImJiYjU1NTVkLThiNzgtNGE4My1hZGE5LThjM2FjNjc1NTZiYSJ9.lbe56GHn5vdlJ-YiEXKd6iqOVgzxQDuW0WJeJ9sSIko

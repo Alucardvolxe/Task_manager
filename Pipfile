@@ -9,6 +9,7 @@ django-debug-toolbar = "*"
 djangorestframework = "*"
 djangorestframework-simplejwt = "*"
 django-filter = "*"
+django-q2 = "*"
 
 [dev-packages]
 

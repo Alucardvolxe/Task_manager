@@ -1,0 +1,931 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Q Cluster carpet-potato-ink-yankee starting.
+Process-dd8b88e42a824491b811fcad851bc773 guarding cluster carpet-potato-ink-yankee [DjangORM]
+Q Cluster carpet-potato-ink-yankee [DjangORM] running.
+Process-b00ce850479a40ae8ae2ac1614547c74 monitoring at 21000
+Process-93158fca190043f190f4d7693927a29a ready for work at 22476
+Process-3678f7b5351844d4b40da4359799ee9a pushing tasks at 4980
+Process-aaa2447bece94ecba229ac2244889b19 ready for work at 12740
+Process-04b944d649414a549a3d697c83d2712c ready for work at 8628
+Process-18f30b3f56004c84a55930cfea3f7d33 ready for work at 19412
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+Internal Server Error: /tasks/1/results/
+Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Alucard\python projects\Task_manager\core\views.py", line 72, in results
+    scheduled = schedule.objects.filter(name=task_name).order_by('-next_run')
+                ^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'objects'
+Internal Server Error: /tasks/1/results/
+Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Alucard\python projects\Task_manager\core\views.py", line 72, in results
+    scheduled = schedule.objects.filter(name=task_name).order_by('-next_run')
+                ^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'objects'
+"GET /tasks/1/results/ HTTP/1.1" 500 112872
+"GET /tasks/1/results/ HTTP/1.1" 500 112872
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /tasks/1/results/ HTTP/1.1" 200 142
+"GET /tasks/1/results/ HTTP/1.1" 200 142
+Unauthorized: /tasks/
+Unauthorized: /tasks/
+"POST /tasks/ HTTP/1.1" 401 172
+"POST /tasks/ HTTP/1.1" 401 172
+"GET /tasks/1/results/ HTTP/1.1" 200 142
+"GET /tasks/1/results/ HTTP/1.1" 200 142
+Unauthorized: /tasks/1/results/
+Unauthorized: /tasks/1/results/
+"GET /tasks/1/results/ HTTP/1.1" 401 172
+"GET /tasks/1/results/ HTTP/1.1" 401 172
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"GET /tasks/1/results/ HTTP/1.1" 200 142
+"GET /tasks/1/results/ HTTP/1.1" 200 142
+"POST /tasks/ HTTP/1.1" 201 161
+"POST /tasks/ HTTP/1.1" 201 161
+Enqueued [DjangORM] 3
+Process-dd8b88e42a824491b811fcad851bc773 created task earth-romeo-solar-oxygen from schedule [reminder_2]
+Process-93158fca190043f190f4d7693927a29a processing earth-romeo-solar-oxygen 'core.tasks.send_task' [reminder_2]
+Processed 'core.tasks.send_task' (earth-romeo-solar-oxygen)
+"GET /tasks/1/results/ HTTP/1.1" 200 142
+"GET /tasks/1/results/ HTTP/1.1" 200 142
+"GET /tasks/2/results/ HTTP/1.1" 200 135
+"GET /tasks/2/results/ HTTP/1.1" 200 135
+Enqueued [DjangORM] 4
+Process-dd8b88e42a824491b811fcad851bc773 created task georgia-bakerloo-cold-finch from schedule [reminder_2]
+Process-aaa2447bece94ecba229ac2244889b19 processing georgia-bakerloo-cold-finch 'core.tasks.send_task' [reminder_2]
+Processed 'core.tasks.send_task' (georgia-bakerloo-cold-finch)
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+Internal Server Error: /tasks/2/results/
+Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Alucard\python projects\Task_manager\core\views.py", line 68, in results
+    executed_qs = Task.objects.filter(schedule_id=schedule_obj.id).order_by('-started')
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1551, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1358, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1832, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'schedule_id' into field. Choices are: args, attempt_count, cluster, func, group, hook, id, kwargs, name, result, started, stopped, success
+Internal Server Error: /tasks/2/results/
+Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Alucard\python projects\Task_manager\core\views.py", line 68, in results
+    executed_qs = Task.objects.filter(schedule_id=schedule_obj.id).order_by('-started')
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1551, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1358, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1832, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'schedule_id' into field. Choices are: args, attempt_count, cluster, func, group, hook, id, kwargs, name, result, started, stopped, success
+"GET /tasks/2/results/ HTTP/1.1" 500 159284
+"GET /tasks/2/results/ HTTP/1.1" 500 159284
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+Internal Server Error: /tasks/2/results/
+Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Alucard\python projects\Task_manager\core\views.py", line 68, in results
+    executed_qs = QTask.objects.filter(kwargs__contains=f'"task_id": {task.id}').order_by('-started')
+                  ^^^^^
+NameError: name 'QTask' is not defined. Did you mean: 'Task'?
+Internal Server Error: /tasks/2/results/
+Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Alucard\python projects\Task_manager\core\views.py", line 68, in results
+    executed_qs = QTask.objects.filter(kwargs__contains=f'"task_id": {task.id}').order_by('-started')
+                  ^^^^^
+NameError: name 'QTask' is not defined. Did you mean: 'Task'?
+"GET /tasks/2/results/ HTTP/1.1" 500 112636
+"GET /tasks/2/results/ HTTP/1.1" 500 112636
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /tasks/2/results/
+Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Alucard\python projects\Task_manager\core\views.py", line 68, in results
+    executed_qs = Task.objects.filter(kwargs__contains=f'"task_id": {task.id}').order_by('-started')
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1613, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1430, in build_lookup
+    lookup_class = lhs.get_lookup(lookup_name)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\expressions.py", line 404, in get_lookup
+    return self.output_field.get_lookup(lookup)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\picklefield\fields.py", line 220, in get_lookup
+    raise TypeError('Lookup type %s is not supported.' % lookup_name)
+TypeError: Lookup type contains is not supported.
+Internal Server Error: /tasks/2/results/
+Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Alucard\python projects\Task_manager\core\views.py", line 68, in results
+    executed_qs = Task.objects.filter(kwargs__contains=f'"task_id": {task.id}').order_by('-started')
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1542, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1560, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\query.py", line 1570, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1671, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1703, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1613, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\sql\query.py", line 1430, in build_lookup
+    lookup_class = lhs.get_lookup(lookup_name)
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django\db\models\expressions.py", line 404, in get_lookup
+    return self.output_field.get_lookup(lookup)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\picklefield\fields.py", line 220, in get_lookup
+    raise TypeError('Lookup type %s is not supported.' % lookup_name)
+TypeError: Lookup type contains is not supported.
+"GET /tasks/2/results/ HTTP/1.1" 500 162821
+"GET /tasks/2/results/ HTTP/1.1" 500 162821
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"GET /tasks/2/results/ HTTP/1.1" 200 33
+"GET /tasks/2/results/ HTTP/1.1" 200 33
+"GET /tasks/2/results/ HTTP/1.1" 200 33
+"GET /tasks/2/results/ HTTP/1.1" 200 33
+"GET /tasks/1/results/ HTTP/1.1" 200 33
+"GET /tasks/1/results/ HTTP/1.1" 200 33
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"GET /tasks/1/results/ HTTP/1.1" 200 33
+"GET /tasks/1/results/ HTTP/1.1" 200 33
+Unauthorized: /tasks/
+Unauthorized: /tasks/
+"POST /tasks/ HTTP/1.1" 401 172
+"POST /tasks/ HTTP/1.1" 401 172
+"POST /tasks/ HTTP/1.1" 201 168
+"POST /tasks/ HTTP/1.1" 201 168
+Enqueued [DjangORM] 5
+Process-dd8b88e42a824491b811fcad851bc773 created task may-snake-jersey-kilo from schedule [reminder_3]
+Process-04b944d649414a549a3d697c83d2712c processing may-snake-jersey-kilo 'core.tasks.send_task' [reminder_3]
+Failed 'core.tasks.send_task' (may-snake-jersey-kilo) - send_task() got an unexpected keyword argument 'group' : Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django_q\worker.py", line 103, in worker
+    res = f(*task["args"], **task["kwargs"])
+TypeError: send_task() got an unexpected keyword argument 'group'
+
+Enqueued [DjangORM] 6
+Process-dd8b88e42a824491b811fcad851bc773 created task seven-fish-london-tennis from schedule [reminder_3]
+Process-18f30b3f56004c84a55930cfea3f7d33 processing seven-fish-london-tennis 'core.tasks.send_task' [reminder_3]
+Processed 'core.tasks.send_task' (seven-fish-london-tennis)
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Process-93158fca190043f190f4d7693927a29a processing may-snake-jersey-kilo 'core.tasks.send_task' [reminder_3]
+Failed 'core.tasks.send_task' (may-snake-jersey-kilo) - send_task() got an unexpected keyword argument 'group' : Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django_q\worker.py", line 103, in worker
+    res = f(*task["args"], **task["kwargs"])
+TypeError: send_task() got an unexpected keyword argument 'group'
+
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /tasks/1/results/ HTTP/1.1" 200 304
+"GET /tasks/1/results/ HTTP/1.1" 200 304
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /tasks/1/results/
+Unauthorized: /tasks/1/results/
+"GET /tasks/1/results/ HTTP/1.1" 401 172
+"GET /tasks/1/results/ HTTP/1.1" 401 172
+Process-aaa2447bece94ecba229ac2244889b19 processing may-snake-jersey-kilo 'core.tasks.send_task' [reminder_3]
+Failed 'core.tasks.send_task' (may-snake-jersey-kilo) - send_task() got an unexpected keyword argument 'group' : Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django_q\worker.py", line 103, in worker
+    res = f(*task["args"], **task["kwargs"])
+TypeError: send_task() got an unexpected keyword argument 'group'
+
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"GET /tasks/1/results/ HTTP/1.1" 200 421
+"GET /tasks/1/results/ HTTP/1.1" 200 421
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Process-04b944d649414a549a3d697c83d2712c processing may-snake-jersey-kilo 'core.tasks.send_task' [reminder_3]
+Failed 'core.tasks.send_task' (may-snake-jersey-kilo) - send_task() got an unexpected keyword argument 'group' : Traceback (most recent call last):
+  File "C:\Users\Alucard\.virtualenvs\Task_manager-bvuKbslZ\Lib\site-packages\django_q\worker.py", line 103, in worker
+    res = f(*task["args"], **task["kwargs"])
+TypeError: send_task() got an unexpected keyword argument 'group'
+
+Process-18f30b3f56004c84a55930cfea3f7d33 processing may-snake-jersey-kilo 'core.tasks.send_task' [reminder_3]
+Processed 'core.tasks.send_task' (may-snake-jersey-kilo)
+Unauthorized: /tasks/2/results/
+Unauthorized: /tasks/2/results/
+"GET /tasks/2/results/ HTTP/1.1" 401 172
+"GET /tasks/2/results/ HTTP/1.1" 401 172
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"GET /tasks/2/results/ HTTP/1.1" 200 415
+"GET /tasks/2/results/ HTTP/1.1" 200 415
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /tasks/2/results/ HTTP/1.1" 200 296
+"GET /tasks/2/results/ HTTP/1.1" 200 296
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"GET /tasks/1/results/ HTTP/1.1" 200 304
+"GET /tasks/1/results/ HTTP/1.1" 200 304
+"GET /tasks/3/results/ HTTP/1.1" 200 306
+"GET /tasks/3/results/ HTTP/1.1" 200 306
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /account/Signup/
+Bad Request: /account/Signup/
+"POST /account/Signup/ HTTP/1.1" 400 109
+"POST /account/Signup/ HTTP/1.1" 400 109
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+Q Cluster cup-rugby-batman-solar starting.
+Process-b4721b5a0f604c87812be1905db4cece guarding cluster cup-rugby-batman-solar [DjangORM]
+Q Cluster cup-rugby-batman-solar [DjangORM] running.
+Process-8edb1e3c280a4d7f94d5469dac89f32e monitoring at 22412
+Process-d8256e4c9680497a864664dc2035c60c ready for work at 10252
+Process-662ed36fe83f4fa6b0b111f3470e6963 pushing tasks at 13144
+Process-3267f16758ff47c68a98195836c27765 ready for work at 15100
+Process-6d2e218b77ae45f0b2e144cd410cea18 ready for work at 5312
+Process-df2e1d1174fa47218304f8d670e594e9 ready for work at 6916
+Unauthorized: /tasks/
+Unauthorized: /tasks/
+"POST /tasks/ HTTP/1.1" 401 172
+"POST /tasks/ HTTP/1.1" 401 172
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /tasks/ HTTP/1.1" 201 172
+"POST /tasks/ HTTP/1.1" 201 172
+Enqueued [DjangORM] 7
+Process-b4721b5a0f604c87812be1905db4cece created task zulu-chicken-berlin-lemon from schedule [reminder_4]
+Process-d8256e4c9680497a864664dc2035c60c processing zulu-chicken-berlin-lemon 'core.tasks.send_task' [reminder_4]
+Processed 'core.tasks.send_task' (zulu-chicken-berlin-lemon)
+Enqueued [DjangORM] 8
+Process-b4721b5a0f604c87812be1905db4cece created task timing-montana-ten-nitrogen from schedule [reminder_4]
+Process-3267f16758ff47c68a98195836c27765 processing timing-montana-ten-nitrogen 'core.tasks.send_task' [reminder_4]
+Processed 'core.tasks.send_task' (timing-montana-ten-nitrogen)
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+Unauthorized: /tasks/1/
+Unauthorized: /tasks/1/
+"GET /tasks/1/ HTTP/1.1" 401 58
+"GET /tasks/1/ HTTP/1.1" 401 58
+"GET /tasks/1/ HTTP/1.1" 200 165
+"GET /tasks/1/ HTTP/1.1" 200 165
+"GET /tasks/user-tasks/ HTTP/1.1" 200 671
+"GET /tasks/user-tasks/ HTTP/1.1" 200 671
+"DELETE /tasks/2/ HTTP/1.1" 204 0
+"DELETE /tasks/2/ HTTP/1.1" 204 0
+"GET /tasks/user-tasks/ HTTP/1.1" 200 509
+"GET /tasks/user-tasks/ HTTP/1.1" 200 509
+"GET /tasks/user-tasks/ HTTP/1.1" 200 509
+"GET /tasks/user-tasks/ HTTP/1.1" 200 509
+Unauthorized: /tasks/3/results/
+Unauthorized: /tasks/3/results/
+"GET /tasks/3/results/ HTTP/1.1" 401 172
+"GET /tasks/3/results/ HTTP/1.1" 401 172
+"GET /tasks/3/results/ HTTP/1.1" 200 306
+"GET /tasks/3/results/ HTTP/1.1" 200 306
+Q Cluster ohio-friend-eight-georgia starting.
+Process-a9804de8e93044cea0d951a46cd99640 guarding cluster ohio-friend-eight-georgia [DjangORM]
+Q Cluster ohio-friend-eight-georgia [DjangORM] running.
+Process-d3d17da68ed341d08bfc373d13786d4d ready for work at 10988
+Process-d84111be79cf4fdb947b80d7e6ee46d4 pushing tasks at 1656
+Process-a11b7357eece4b4b9244bded22c65adc ready for work at 10664
+Process-eb49eda8770941658cfaef976994c4b0 ready for work at 23892
+Process-7bf6bbddee1e4d928dad62ee2c60183a ready for work at 23400
+Process-30d694ed26ac4cddac77a527615e5286 monitoring at 26504
+Unauthorized: /tasks/
+Unauthorized: /tasks/
+"POST /tasks/ HTTP/1.1" 401 172
+"POST /tasks/ HTTP/1.1" 401 172
+Unauthorized: /tasks/
+Unauthorized: /tasks/
+"POST /tasks/ HTTP/1.1" 401 172
+"POST /tasks/ HTTP/1.1" 401 172
+Unauthorized: /tasks/
+Unauthorized: /tasks/
+"POST /tasks/ HTTP/1.1" 401 172
+"POST /tasks/ HTTP/1.1" 401 172
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /tasks/ HTTP/1.1" 201 172
+"POST /tasks/ HTTP/1.1" 201 172
+Enqueued [DjangORM] 9
+Process-a9804de8e93044cea0d951a46cd99640 created task april-lithium-timing-louisiana from schedule [reminder_5]
+Process-d3d17da68ed341d08bfc373d13786d4d processing april-lithium-timing-louisiana 'core.tasks.send_task' [reminder_5]
+Processed 'core.tasks.send_task' (april-lithium-timing-louisiana)
+Enqueued [DjangORM] 10
+Process-a9804de8e93044cea0d951a46cd99640 created task zulu-harry-fifteen-iowa from schedule [reminder_5]
+Process-a11b7357eece4b4b9244bded22c65adc processing zulu-harry-fifteen-iowa 'core.tasks.send_task' [reminder_5]
+Processed 'core.tasks.send_task' (zulu-harry-fifteen-iowa)
+Unauthorized: /tasks/5/
+Unauthorized: /tasks/5/
+"GET /tasks/5/ HTTP/1.1" 401 172
+"GET /tasks/5/ HTTP/1.1" 401 172
+Unauthorized: /tasks/5/
+Unauthorized: /tasks/5/
+"GET /tasks/5/ HTTP/1.1" 401 172
+"GET /tasks/5/ HTTP/1.1" 401 172
+"GET /tasks/5/ HTTP/1.1" 200 171
+"GET /tasks/5/ HTTP/1.1" 200 171
+"POST /tasks/ HTTP/1.1" 201 172
+"POST /tasks/ HTTP/1.1" 201 172
+Enqueued [DjangORM] 11
+Process-a9804de8e93044cea0d951a46cd99640 created task early-india-early-moon from schedule [reminder_6]
+Process-eb49eda8770941658cfaef976994c4b0 processing early-india-early-moon 'core.tasks.send_task' [reminder_6]
+Processed 'core.tasks.send_task' (early-india-early-moon)
+Enqueued [DjangORM] 12
+Process-a9804de8e93044cea0d951a46cd99640 created task dakota-venus-venus-grey from schedule [reminder_6]
+Process-7bf6bbddee1e4d928dad62ee2c60183a processing dakota-venus-venus-grey 'core.tasks.send_task' [reminder_6]
+Processed 'core.tasks.send_task' (dakota-venus-venus-grey)
+Unauthorized: /tasks/6/results/
+Unauthorized: /tasks/6/results/
+"GET /tasks/6/results/ HTTP/1.1" 401 172
+"GET /tasks/6/results/ HTTP/1.1" 401 172
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"GET /tasks/6/results/ HTTP/1.1" 200 314
+"GET /tasks/6/results/ HTTP/1.1" 200 314
+"GET /tasks/5/ HTTP/1.1" 200 171
+"GET /tasks/5/ HTTP/1.1" 200 171
+"GET /tasks/6/ HTTP/1.1" 200 172
+"GET /tasks/6/ HTTP/1.1" 200 172
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+reincarnated worker Process-7bf6bbddee1e4d928dad62ee2c60183a after death
+reincarnated worker Process-d3d17da68ed341d08bfc373d13786d4d after death
+reincarnated monitor Process-30d694ed26ac4cddac77a527615e5286 after sudden death
+reincarnated pusher Process-d84111be79cf4fdb947b80d7e6ee46d4 after sudden death
+reincarnated worker Process-eb49eda8770941658cfaef976994c4b0 after death
+reincarnated worker Process-a11b7357eece4b4b9244bded22c65adc after death
+reincarnated worker Process-662260278163446699b9167e697816d0 after death
+reincarnated worker Process-c411c5aabaae443b9174aecdfb75db73 after death
+reincarnated monitor Process-73d826bf398e433da555f37741775143 after sudden death
+reincarnated pusher Process-8b822d49e0ab4162a00514c6f09aa25c after sudden death
+reincarnated worker Process-01d722dd5c654516b74ad2592c641333 after death
+reincarnated worker Process-5aa4570e4fea4cc18744645ee31571fa after death
+reincarnated worker Process-3e36728bf12f4b60988ade5412f52bb4 after death
+reincarnated worker Process-127bcf4ded6945efb6e14bd4a357a263 after death
+reincarnated worker Process-852f3097166542298554d41a13d9b5a6 after death
+reincarnated monitor Process-2ef127f946f946db95778ee359c8922f after sudden death
+reincarnated pusher Process-f7de67fbc8e74e8b94ce8690f6db52e6 after sudden death
+reincarnated worker Process-dbef8f549a7f42f0be250056cfc8f7a8 after death
+reincarnated worker Process-6d6d4cddfbaf4bf08da0f2b930c59a12 after death
+reincarnated monitor Process-3c28997b5cae4edf8968ba6a62f7e2f4 after sudden death
+reincarnated pusher Process-772d6c6bf5734265b895d9dc5351dd11 after sudden death
+reincarnated worker Process-65cdd52429004f529ddc58b92a43e208 after death
+reincarnated worker Process-96e9e1d23f4244f4bdd035b8aea79885 after death
+reincarnated monitor Process-09f358edd9bf4422a9de99eb9e2db390 after sudden death
+reincarnated pusher Process-77f69dde84f14a81a58489d412843dd4 after sudden death
+reincarnated worker Process-43b37bd3662542039e7897ae51e75794 after death
+reincarnated worker Process-7e96e6db33224d98b680598e998c2d23 after death
+reincarnated monitor Process-af0a3bf14c594ae1bb49b9bd49b51b50 after sudden death
+reincarnated pusher Process-33f90000cdc944c488db097e898779b7 after sudden death
+reincarnated worker Process-a494a5c30cc240ce963d13235ea00014 after death
+reincarnated worker Process-4fe46a45e2b2412b829751ae9d2cdc6c after death
+reincarnated monitor Process-fed8f99a96b845f4b4d49a943d3dc295 after sudden death
+reincarnated pusher Process-31264fb492ee41f69ce3edf031d42a6d after sudden death
+reincarnated worker Process-972c35655a3c4d18b9342f30b900bc48 after death
+reincarnated worker Process-7276e3422f1c4c17bf0775e4bcab23c0 after death
+reincarnated monitor Process-1d7b9626c89145f99a1c87a25d9ae2f4 after sudden death
+reincarnated pusher Process-ac3fa94b97964073a926dbd5a093d1b2 after sudden death
+reincarnated worker Process-118771cabe8a4dc992f7db4774148928 after death
+reincarnated worker Process-be5a408788654972a1445cb03f1f698f after death
+reincarnated monitor Process-cb8d98f038cf44a1a3a58ca37a6d081a after sudden death
+reincarnated pusher Process-b0f46adc226746769add483b8b5fe472 after sudden death
+reincarnated worker Process-fce36303360a423799c00cb80cf9277b after death
+reincarnated worker Process-7db50350fdb44516bdf3c3eba9750157 after death
+reincarnated monitor Process-10b05aec8b3541aebba79c5381dea054 after sudden death
+reincarnated pusher Process-7f1cd14215cc411c85d6a9e6b6a256b4 after sudden death
+reincarnated worker Process-8c72723325fd490691958c9cd3aeaa0f after death
+reincarnated worker Process-7e3d718a9a7d451cb94f1cd7fc5d1e6d after death
+reincarnated worker Process-1b38e1dd8d534eb1877b2a3a6e8fdb25 after death
+reincarnated monitor Process-c95fa07be3ef4e4e8d300acad22d506d after sudden death
+reincarnated pusher Process-a8ed0ff2e889495a8f79b3022ba5b9c0 after sudden death
+reincarnated worker Process-ecfe63ea1ee14f06b7c9f8ff9d7ceac2 after death
+reincarnated worker Process-11916f5503014ca1a6bf1eaa1be8fbb1 after death
+reincarnated monitor Process-4f7dc9b034a84d73832762cd2e1f1f4a after sudden death
+reincarnated pusher Process-23a38438d4234e11a313c51a01e7ed7b after sudden death
+reincarnated worker Process-736f8067885c419e9046ce57f14ee09f after death
+reincarnated worker Process-3ae8aa36513a41a4b37f4e4bdd88b5f4 after death
+reincarnated monitor Process-b163da88cd274e549a5ded88f9e22136 after sudden death
+reincarnated pusher Process-25ae8b0cdb914af88485c24827991d49 after sudden death
+reincarnated worker Process-a6751de1b1804917ba0c3ca5380ab0df after death
+reincarnated worker Process-e5fc91387bca4ffd9e9c045a2a0befca after death
+reincarnated monitor Process-098ab047ef7f493f8ae8b8eddc869f58 after sudden death
+reincarnated pusher Process-6797d7c25913466c9fc0084cd1aa2053 after sudden death
+reincarnated worker Process-7f1814c757f04da7a899ba2cb51c30c8 after death
+reincarnated worker Process-0a76e22744b542ea9c12603536aa02bf after death
+reincarnated monitor Process-a559ca211e604569a193fd43ed5926f1 after sudden death
+reincarnated pusher Process-83fe82c1e0a343ef87c6b508fc16fc1b after sudden death
+reincarnated worker Process-db59d3be92674fa38b2a9dec3c776e5f after death
+reincarnated worker Process-4ce41486c6d74c02ab2d928cc267b000 after death
+reincarnated monitor Process-eb2bf3ddd54e49409dceadea19662702 after sudden death
+reincarnated pusher Process-1ac3f64817e6453c8fae17f3cd78bb10 after sudden death
+reincarnated worker Process-92fa869365c54ce4b6fa62455590a3eb after death
+reincarnated worker Process-8657587d4df9400bb2781a3a0ba87ae1 after death
+reincarnated monitor Process-80a7ff6e4f914346b06f085b262a4804 after sudden death
+reincarnated pusher Process-db8b7c89b79046378f59ec8460535622 after sudden death
+reincarnated worker Process-a845ea27ffea4b85b4dd699de9a16b67 after death
+reincarnated worker Process-cf8d64d00b7843058118920b06ea82ef after death
+reincarnated monitor Process-36bff0d01d7c433b8a7426e69e946835 after sudden death
+reincarnated pusher Process-31686ccd36694c80a17abf39e30717f5 after sudden death
+reincarnated worker Process-4e95d1900bbe44e1bf2ac6fb14ad4d8b after death
+reincarnated worker Process-ab388241b4b54822aca28cdafee6615f after death
+reincarnated monitor Process-d2f7e8f3efb8442b81d3ad7dd3813f16 after sudden death
+reincarnated pusher Process-c21833b115274524972bd4053407f106 after sudden death
+reincarnated worker Process-24841276293140a683bc4c96ff6bf71f after death
+reincarnated worker Process-ba8da6b673144b13a7120abcc55244c6 after death
+reincarnated monitor Process-45128c63de694e7e814687d01a29357e after sudden death
+reincarnated pusher Process-860e2d8824a34352a153bb3d9ecf82d5 after sudden death
+reincarnated worker Process-31671e6a07a5463fbc6fc2dd148c5a5c after death
+reincarnated worker Process-737d8983d4f2481d93ee6e70ba97c0f3 after death
+reincarnated monitor Process-cbeb91bb093044b9852cbc603761646a after sudden death
+reincarnated pusher Process-02220ecd1d9342b4bd492fc7b1f0f4bd after sudden death
+reincarnated worker Process-5f431f767d5849aea4ebc1aac2297cc6 after death
+reincarnated worker Process-17559bce4d4644368377bca0d951fba2 after death
+reincarnated monitor Process-ed8d7cb8af7741e280ba68ee676ceb5d after sudden death
+reincarnated pusher Process-0a9ae72b92334232846fd9f094d8d7de after sudden death
+reincarnated worker Process-9844834755b44b6a856efd27a22acd8c after death
+reincarnated worker Process-b24b0e5f97a9406c82625e3a44d9f622 after death
+reincarnated monitor Process-43ea54b5a661468683165e8eec4f0b38 after sudden death
+reincarnated pusher Process-c676f12b899646f7b945f0345f9d2eac after sudden death
+reincarnated worker Process-75123fa5f06d418bbe8cb0e131fe25a2 after death
+reincarnated worker Process-6261317733234927b83285851ecffc2b after death
+reincarnated monitor Process-4c4fa896d22249c7a438fa0aaed264b6 after sudden death
+reincarnated pusher Process-aaad70b3464e47409718e212e54dd47e after sudden death
+reincarnated worker Process-12dc27be41394db9a901435ab8bf3f37 after death
+reincarnated worker Process-57dd61cd3bba411fa5b60a31efcff150 after death
+reincarnated monitor Process-5bb9a1e2f6274385ad6a5dba048fd37c after sudden death
+reincarnated pusher Process-efc029932eb14cd0b69bb5cca109058b after sudden death
+reincarnated worker Process-4162fa3108c7480790aad81f2028ec64 after death
+reincarnated worker Process-501a020d0f154f529ae02075e7aee0ee after death
+reincarnated monitor Process-f858699f150b4152a87fd420ddc8b68c after sudden death
+reincarnated pusher Process-e7b82c4ed81e435fb7b97fc2be7bd946 after sudden death
+reincarnated worker Process-36ae20e16df244a8b1b76a7a530a4468 after death
+reincarnated worker Process-0d49505604304cca9b13cf2d30177122 after death
+reincarnated monitor Process-e856ef5e55f6416c8c4980b738626d92 after sudden death
+reincarnated pusher Process-5ee2a8eb94af45e8a29992e90fd3f6db after sudden death
+reincarnated worker Process-c9f4df5cf8d040ff9ccc1973ba462af7 after death
+reincarnated worker Process-0f6f648be4a04c06b4d32b17dcc53c15 after death
+reincarnated monitor Process-61d68aae03d14364b1331076bd2b282a after sudden death
+reincarnated pusher Process-875b5c0120cd43b2adb4c0e780c76ba8 after sudden death
+reincarnated worker Process-e9c0f197526a4aeb9a51848cde9b757f after death
+reincarnated worker Process-26c62890dc304c05af7098c2daa73a70 after death
+reincarnated worker Process-10c0478566144621a7b2ef3de22971a2 after death
+reincarnated monitor Process-a0a26322145b4d12b676a69921c5398f after sudden death
+reincarnated pusher Process-aff09cb974af489885d23397a9cef5df after sudden death
+reincarnated worker Process-a713a72e5d3648709a3c1503ca39b36e after death
+reincarnated worker Process-180f84687d174e0cbde7b2cde9d8cd2e after death
+reincarnated monitor Process-51740113a75a43d7909f2b8fcdadedb4 after sudden death
+reincarnated pusher Process-cf0c4ea0d32a4f8dbdf25ba8442ed32c after sudden death
+reincarnated worker Process-c680ffb7e7174b1298a5c19fad60455f after death
+reincarnated worker Process-fc790fefc4524620806900a79fdb46b5 after death
+Process-d98ff3756d504a7a8ea1e45573bc653d ready for work at 26032
+Process-79a65c6722bf451b87f9e8eea3d02571 monitoring at 23568
+Process-87abf36d53f542fd979f6ea8705ac8e1 pushing tasks at 12284
+Process-d9ecfc413f5f42cbbc8389f3277e4891 ready for work at 23516
+Process-3adfd4f4596246d5a26973cca8db3574 ready for work at 10064
+Process-fb077c70f2f04ab58bdb2ca2f12366c7 ready for work at 22372
+reincarnated worker Process-d9ecfc413f5f42cbbc8389f3277e4891 after death
+reincarnated worker Process-3adfd4f4596246d5a26973cca8db3574 after death
+reincarnated monitor Process-79a65c6722bf451b87f9e8eea3d02571 after sudden death
+reincarnated pusher Process-87abf36d53f542fd979f6ea8705ac8e1 after sudden death
+reincarnated worker Process-d98ff3756d504a7a8ea1e45573bc653d after death
+reincarnated worker Process-fb077c70f2f04ab58bdb2ca2f12366c7 after death
+Process-cd9b9d566cee486fa2a4a7df007a0fc9 pushing tasks at 8520
+Process-2f52358262554a2a9f25c476f3600a02 ready for work at 25160
+Process-fe83b787ec3149d6b6fd5fd7ca95b34e monitoring at 18700
+Process-0165d9627d414eb68c192319373ce4d1 ready for work at 24352
+Process-948a7807650e40339410d22462e1a3b9 ready for work at 26204
+Process-878235ad480d4c24ac4b8c0ccde5806f ready for work at 17464
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+Method Not Allowed: /api/token/refresh/
+Method Not Allowed: /api/token/refresh/
+"GET /api/token/refresh/ HTTP/1.1" 405 40
+"GET /api/token/refresh/ HTTP/1.1" 405 40
+"POST /api/token/refresh/ HTTP/1.1" 200 290
+"POST /api/token/refresh/ HTTP/1.1" 200 290
+"POST /api/token/refresh/ HTTP/1.1" 200 290
+"POST /api/token/refresh/ HTTP/1.1" 200 290
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /account/Signup/ HTTP/1.1" 201 46
+"POST /account/Signup/ HTTP/1.1" 201 46
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+Q Cluster virginia-indigo-hydrogen-papa starting.
+Process-d8d3880d519742eb94745b632dff74e7 guarding cluster virginia-indigo-hydrogen-papa [DjangORM]
+Q Cluster virginia-indigo-hydrogen-papa [DjangORM] running.
+Process-2ffe1166cdd845fe9e9b51c99d91ec00 ready for work at 18916
+Process-12bc867ac7254ed0b36f6d64f1d1159a ready for work at 24916
+Process-da4654eddce24b539b43f7e35d2a23f1 pushing tasks at 17600
+Process-53cd9daeae3c4e3392155bc54ee2a9c2 monitoring at 25576
+Process-2020efffe7a34f24b35493fa8e969324 ready for work at 18864
+Process-60a6142016d5499d9f0189c56f574a12 ready for work at 16352
+"POST /tasks/ HTTP/1.1" 201 174
+"POST /tasks/ HTTP/1.1" 201 174
+Enqueued [DjangORM] 13
+Process-d8d3880d519742eb94745b632dff74e7 created task nine-september-pip-fix from schedule [reminder_7]
+Process-2ffe1166cdd845fe9e9b51c99d91ec00 processing nine-september-pip-fix 'core.tasks.send_task' [reminder_7]
+Processed 'core.tasks.send_task' (nine-september-pip-fix)
+"POST /account/Login/ HTTP/1.1" 200 685
+"POST /account/Login/ HTTP/1.1" 200 685
+Enqueued [DjangORM] 14
+Process-d8d3880d519742eb94745b632dff74e7 created task mirror-carpet-blossom-speaker from schedule [reminder_7]
+Process-12bc867ac7254ed0b36f6d64f1d1159a processing mirror-carpet-blossom-speaker 'core.tasks.send_task' [reminder_7]
+Processed 'core.tasks.send_task' (mirror-carpet-blossom-speaker)
+"GET /tasks/ HTTP/1.1" 200 1028
+"GET /tasks/ HTTP/1.1" 200 1028
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"GET /tasks/ HTTP/1.1" 200 175
+"GET /tasks/ HTTP/1.1" 200 175
+"GET /tasks/ HTTP/1.1" 200 175
+"GET /tasks/ HTTP/1.1" 200 175
+Bad Request: /account/Signup/
+Bad Request: /account/Signup/
+"POST /account/Signup/ HTTP/1.1" 400 43
+"POST /account/Signup/ HTTP/1.1" 400 43
+"POST /account/Signup/ HTTP/1.1" 201 46
+"POST /account/Signup/ HTTP/1.1" 201 46
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /account/Login/ HTTP/1.1" 200 680
+"POST /tasks/ HTTP/1.1" 201 172
+"POST /tasks/ HTTP/1.1" 201 172
+Enqueued [DjangORM] 15
+Process-d8d3880d519742eb94745b632dff74e7 created task crazy-glucose-island-hawaii from schedule [reminder_8]
+Process-2020efffe7a34f24b35493fa8e969324 processing crazy-glucose-island-hawaii 'core.tasks.send_task' [reminder_8]
+Processed 'core.tasks.send_task' (crazy-glucose-island-hawaii)
+"GET /tasks/ HTTP/1.1" 200 174
+"GET /tasks/ HTTP/1.1" 200 174
+Enqueued [DjangORM] 16
+Process-d8d3880d519742eb94745b632dff74e7 created task ink-california-black-burger from schedule [reminder_8]
+Process-60a6142016d5499d9f0189c56f574a12 processing ink-california-black-burger 'core.tasks.send_task' [reminder_8]
+Processed 'core.tasks.send_task' (ink-california-black-burger)
+"GET /tasks/ HTTP/1.1" 200 173
+"GET /tasks/ HTTP/1.1" 200 173
+Not Found: /tasks/6/results/
+Not Found: /tasks/6/results/
+"GET /tasks/6/results/ HTTP/1.1" 404 46
+"GET /tasks/6/results/ HTTP/1.1" 404 46
+"GET /tasks/8/results/ HTTP/1.1" 200 314
+"GET /tasks/8/results/ HTTP/1.1" 200 314
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+C:\Users\Alucard\python projects\Task_manager\accounts\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader

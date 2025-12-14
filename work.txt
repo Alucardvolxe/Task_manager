@@ -8,3 +8,8 @@ the program should automatically deliver the reminder
 according to the chosen frequency
 
 This is going to help you understand scheduling
+
+
+
+python manage.py qcluster
+need to run this before the project will work
